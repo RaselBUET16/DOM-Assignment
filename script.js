@@ -29,46 +29,44 @@ function calculateCost() {
   
 }
 
+function calculateChange(element,elementValue){
+    element.innerText=elementValue;
+    calculateCost();
+}
+
 //memory  button click
 document.getElementById("Eight-GB").addEventListener("click", function () {
   memoryCost = 0;
-  memoryCostElement.innerText = 0;
-  calculateCost();
+  calculateChange(memoryCostElement,memoryCost);
 });
 document.getElementById("Sixteen-GB").addEventListener("click", function () {
   memoryCost = 180;
-  memoryCostElement.innerText = 180;
-  calculateCost();
+  calculateChange(memoryCostElement,memoryCost);
 });
 
 //storage button click
 document.getElementById("SSD256").addEventListener("click", function () {
     storageCost =0;
-    storageCostElement.innerText="0";
-    calculateCost();
+    calculateChange(storageCostElement,storageCost);
 })
 document.getElementById("SSD512").addEventListener("click", function () {
     storageCost =100;
-    storageCostElement.innerText="100";
-    calculateCost();
+    calculateChange(storageCostElement,storageCost);
 })
 document.getElementById("SSD1TB").addEventListener("click", function () {
     storageCost =180;
-    storageCostElement.innerText="180";
-    calculateCost();
+    calculateChange(storageCostElement,storageCost);
 })
 
 //delivery option
 
 document.getElementById("Aug25").addEventListener("click", function (){
     deliveryCharge=0;
-    deliveryChargeElement.innerText="0";
-    calculateCost();
+    calculateChange(deliveryChargeElement,deliveryCharge);
 })
 document.getElementById("Aug21").addEventListener("click", function (){
     deliveryCharge=20;
-    deliveryChargeElement.innerText="20";
-    calculateCost();
+    calculateChange(deliveryChargeElement,deliveryCharge);
 })
 
 //promo calculation
