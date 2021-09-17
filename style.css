@@ -1,8 +1,11 @@
+/* Main Section */
 .main-section{
     width:80%;
     margin: 0 auto;
     display:flex;
 }
+
+/* Image Section */
 .image-section{
     width: 50%;
     padding :2% ;
@@ -10,6 +13,8 @@
 .cpu-image{
     width:100%;
 }
+
+/* Description Section */
 .description-section{
     width:50%;
     padding:2%;
@@ -24,14 +29,6 @@
     color: gray ;
     border-radius:4px;
 }
-.storage-section{
-    margin-top : 7%;
-}
-.delivery-option-section{
-    margin-top:7%;
-}
-
-
 .buttons:hover{
     background-color:black;
     color:white;
@@ -39,6 +36,15 @@
 
 .buttons:focus{
     border:4px solid gray;
+}
+
+
+.storage-section{
+    margin-top : 7%;
+}
+
+.delivery-option-section{
+    margin-top:7%;
 }
 
 .price-section{
@@ -61,4 +67,17 @@
 
 .promo-input{
     margin-top:5px ;
+}
+#promo:focus{
+    border:4px solid gray;
+}
+#promo-btn{
+    background-color:rgba(247, 0, 0, 0.849);
+    color:white;border-radius:4px;
+    border:1px solid rgba(199, 192, 192, 0.651);
+}
+
+#promo-btn:focus{
+    border:4px solid gray; 
+    
 }
