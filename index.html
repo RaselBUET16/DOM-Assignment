@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="main-section">
+        <!-- image-section -->
+        <section class="image-section">
+            <img src="images/mac.png" alt="" class="cpu-image">
+
+        </section>
+
+        <!-- description-section -->
+        <section class="description-section">
+            <div class="header-section">
+                <h1 style="margin-top:0;">
+                    Customize your Blue 24-inch iMac with Apple M1 chip.
+                </h1>
+                <p>
+                    Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores. 7-core GPU, and
+                    16-core
+                    Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt/USB 4 ports Magic Mouse Magic
+                    Keyboard-US English.
+                </p>
+            </div>
+            <div class="memory-section">
+                <h5 class="buttons-header">
+                    Memory
+                </h5>
+
+                <button id="Eight-GB" type="button" class="buttons">
+                    8GB unified memory
+                </button>
+                <button id="Sixteen-GB" type="button" class="buttons">
+                    16GB unified memory
+                </button>
+            </div>
+            </div>
+            <div class="storage-section">
+                <h5 class="buttons-header">
+                    Storage
+                </h5>
+                <div>
+                    <button id="SSD256" type="button" class="buttons">
+                        256GB SSD storage
+                    </button>
+                    <button id="SSD512" type="button" class="buttons">
+                        512GB SSD storage
+                    </button>
+                    <button id="SSD1TB" type="button" class="buttons">
+                        1TB SSD storage
+                    </button>
+                </div>
+            </div>
+            <div class="delivery-option-section">
+                <h5 class="buttons-header">
+                    Choose your delivery option
+                </h5>
+                <div>
+                    <button id ="Aug25" type="button" class="buttons">
+                        Friday,Aug 25 FREE Prime Delivery
+                    </button>
+                    <button id="Aug21" type="button" class="buttons">
+                        Friday, Aug 21 Delivery charge $20
+                    </button>
+                </div>
+            </div>
+
+            <!-- price section -->
+            <div class="price-section">
+                <div class="price-items">
+                    <div class="item-name">Best Price</div>
+                    <div class="price">$<span style="font-weight: bold;" id="base-price">1299</span></div>
+                </div>
+                <hr style="border-top:1px ">
+                <div class="price-items">
+                    <div class="item-name">Extra Memory Cost</div>
+                    <div class="price">$<span style="font-weight: bold;" id="memory-cost">0</span></div>
+                </div>
+                <hr style="border-top:1px">
+                <div class="price-items">
+                    <div class="item-name">Extra Storage Cost</div>
+                    <div class="price">$<span style="font-weight: bold;" id="storage-cost">0</span></div>
+                </div>
+                <hr style="border-top:1px">
+                <div class="price-items">
+                    <div class="item-name">Delivery Charge</div>
+                    <div class="price">$<span style="font-weight: bold;" id="delivery-charge">0</span></div>
+                </div>
+                <hr style="border-top:1px solid black;">
+                <div class="price-items">
+                    <div class="item-name">Total Price</div>
+                    <div class="price">$<span style="font-weight: bold;" id="total-price">1299</span></div>
+                </div>
+                <hr style="border-top:1px">
+                <div class="promo-code">
+                    Add Promo code
+                    <div class="promo-input">
+                        <input id="promo" style="border:1px solid rgba(199, 192, 192, 0.651);" type="text">
+                        <button
+                           id="promo-btn" style="background-color:rgba(247, 0, 0, 0.849);color:white;border-radius:4px;border:1px solid rgba(199, 192, 192, 0.651);">Apply</button>
+                    </div>
+                </div>
+            </div>
+            <hr style="border-top:1px;">
+
+            <div style="text-align:center;">
+                <h1 style="margin-top:2px;">
+                    Total: $<span id="total-amount">1299</span>
+                </h1>
+            </div>
+        </section>
+
+
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
